@@ -1,16 +1,15 @@
 import ArrowDownIcon from '../../Icons/ArrowDownIcon';
-import ArrowDown from '../../Icons/ArrowDownIcon';
 import BellIcon from '../../Icons/BellIcon';
 import LogoIcon from '../../Icons/LogoIcon';
 import LoupeIcon from '../../Icons/LoupeIcon';
 import MusicIcon from '../../Icons/MusicIcon';
 
-import ProfileImg from '../../profile-img.jpg'
-import './Header.css';
+import ProfileImg from './profile-img.jpg'
+import { HeaderStyled } from './styled';
 
 const Header = () => {
   return (
-    <header className="header">
+    <HeaderStyled className="header">
       <div className="container">
         <div className="header__inner">
           <div className="header__logo">
@@ -35,7 +34,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+    </HeaderStyled>
+
   )
 }
 
