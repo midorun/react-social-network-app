@@ -5,4 +5,9 @@ export const MainStyled = styled.main`
     height: 100vh;
     padding-top: 20px;
     background-color: #edeef0;
+
+    .container{
+      display: grid;
+      grid-template-columns: 163px auto;
+    }
 `

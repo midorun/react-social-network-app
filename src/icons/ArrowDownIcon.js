@@ -10,7 +10,7 @@ const ArrowDownIcon = () => {
       x="0px"
       y="0px"
       viewBox="0 0 612.004 612.004"
-      style={{ enableBackground: "new 0 0 612.004 612.004;" }}
+      style={{ enableBackground: "new 0 0 612.004 612.004" }}
       xmlSpace="preserve"
     >
       <path d="M499.147,160.094L330.222,329.019c-6.472,6.472-15.075,10.035-24.223,10.035c-9.146,0-17.749-3.561-24.218-10.035

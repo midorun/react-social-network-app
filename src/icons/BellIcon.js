@@ -11,7 +11,7 @@ const BellIcon = () => {
       x="0px"
       y="0px"
       viewBox="0 0 229.238 229.238"
-      style={{ enableBackground: "new 0 0 229.238 229.238;" }}
+      style={{ enableBackground: "new 0 0 229.238 229.238" }}
       xmlSpace="preserve"
     >
       <path d="M220.228,172.242c-20.606-17.82-39.675-42.962-39.675-105.734c0-36.353-29.576-65.928-65.93-65.928
