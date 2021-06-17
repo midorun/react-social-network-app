@@ -1,8 +1,9 @@
-import ArrowDownIcon from '../../Icons/ArrowDownIcon';
-import BellIcon from '../../Icons/BellIcon';
-import LogoIcon from '../../Icons/LogoIcon';
-import LoupeIcon from '../../Icons/LoupeIcon';
-import MusicIcon from '../../Icons/MusicIcon';
+import Container from '../../components/Container';
+import ArrowDownIcon from '../../components/Icons/ArrowDownIcon';
+import BellIcon from '../../components/Icons/BellIcon';
+import LogoIcon from '../../components/Icons/LogoIcon';
+import LoupeIcon from '../../components/Icons/LoupeIcon';
+import MusicIcon from '../../components/Icons/MusicIcon';
 
 import ProfileImg from './profile-img.jpg'
 import { HeaderStyled } from './styled';
@@ -10,7 +11,7 @@ import { HeaderStyled } from './styled';
 const Header = () => {
   return (
     <HeaderStyled className="header">
-      <div className="container">
+      <Container>
         <div className="header__inner">
           <div className="header__logo">
             <LogoIcon />
@@ -33,7 +34,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </HeaderStyled>
 
   )

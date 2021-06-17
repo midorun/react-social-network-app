@@ -1,16 +1,16 @@
-import CommunitiesIcon from "../../Icons/CommunitiesIcon"
-import FriendsIcon from "../../Icons/FriendsIcon"
-import MessengerIcon from "../../Icons/MessengerIcon"
-import MusicIcon from "../../Icons/MusicIcon"
-import NewsIcon from "../../Icons/NewsIcon"
-import ProfileIcon from "../../Icons/ProfileIcon"
+import CommunitiesIcon from "../../components/Icons/CommunitiesIcon"
+import FriendsIcon from "../../components/Icons/FriendsIcon"
+import MessengerIcon from "../../components/Icons/MessengerIcon"
+import MusicIcon from "../../components/Icons/MusicIcon"
+import NewsIcon from "../../components/Icons/NewsIcon"
+import ProfileIcon from "../../components/Icons/ProfileIcon"
 
 import { Link } from "react-router-dom"
-import { NavStyled } from "./styled"
+import * as ST from "./styled"
 
 const Navbar = () => {
   return (
-    <NavStyled className="nav">
+    <ST.Nav className="nav">
       <ul>
         <li className="nav__li">
           <Link to="/MyProfile" className="nav__link link" href="/">
@@ -49,7 +49,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-    </NavStyled>
+    </ST.Nav>
   )
 }
 

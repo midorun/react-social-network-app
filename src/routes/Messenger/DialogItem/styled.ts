@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Img from '../../../components/Img';
+import Img from '../../../components/Image';
 
-export const DialogItem = styled.li`
+export const Wrapper = styled.li`
   padding:10px 15px 10px 20px;
   height: 70px;
   display: flex;

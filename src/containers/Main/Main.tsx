@@ -1,38 +1,46 @@
+import React from 'react'
 import { Route, Switch } from 'react-router'
+import Column from '../../components/Column'
+import Container from '../../components/Container'
+import Row from '../../components/Row'
 import Messenger from '../../routes/Messenger'
 import MyProfile from '../../routes/MyProfile'
 import Navbar from '../Navbar'
-import { MainStyled } from './styled'
+import * as ST from './styled'
 
 const Main = () => {
   return (
-    <MainStyled>
-      <div className="container">
-        <Navbar />
-        <div className="main__content">
-          <Switch>
-            <Route path="/MyProfile">
-              <MyProfile />
-            </Route>
-            {/* <Route path="">
+    <ST.Main>
+      <Container>
+        <Row>
+          <Column>
+            <Navbar />
+          </Column>
+          <Column>
+            <Switch>
+              <Route path="/MyProfile">
+                <MyProfile />
+              </Route>
+              {/* <Route path="">
               <News />
             </Route> */}
-            <Route path="/Messenger">
-              <Messenger />
-            </Route>
-            {/* <Route path="">
+              <Route path="/Messenger">
+                <Messenger />
+              </Route>
+              {/* <Route path="">
               <Friends />
             </Route> */}
-            {/* <Route path="">
+              {/* <Route path="">
               <Communities />
             </Route> */}
-            {/* <Route path="">
+              {/* <Route path="">
               <Music />
             </Route> */}
-          </Switch>
-        </div>
-      </div>
-    </MainStyled>
+            </Switch>
+          </Column>
+        </Row>
+      </Container>
+    </ST.Main>
   )
 }
 

@@ -4,7 +4,7 @@ import Row from '../../../components/Row'
 
 const DialogItem = () => {
   return (
-    <ST.DialogItem>
+    <ST.Wrapper>
       <ST.DialogImg
         src={DialogImg}
         alt="dialog-img"
@@ -17,7 +17,7 @@ const DialogItem = () => {
         </Row>
         <ST.DialogText>Wall Post</ST.DialogText>
       </ST.DialogContent>
-    </ST.DialogItem>
+    </ST.Wrapper>
   )
 }
 

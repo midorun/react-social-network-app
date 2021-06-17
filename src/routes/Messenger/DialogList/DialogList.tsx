@@ -1,12 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
 import DialogItem from '../DialogItem'
 
 const DialogList = () => {
   return (
-    <ul className='dialog-list'>
+    <Wrapper className='dialog-list'>
       <DialogItem />
-    </ul>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  
+`
 
 export default DialogList

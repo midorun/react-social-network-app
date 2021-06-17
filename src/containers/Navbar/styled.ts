@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const NavStyled = styled.nav`
+export const Nav = styled.nav`
   .nav__li {
     width: 163px;
     height: 30px;
