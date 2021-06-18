@@ -20,24 +20,6 @@ export const HeaderStyled = styled.header`
     /* cursor: pointer; */
   }
 
-  .header__searchbar {
-    width: 230px;
-    height: 32px;
-    margin-right: 30px;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    background: #edeef0;
-  }
-
-  .header__input {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 15px;
-  }
-
   .header__icons {
     width: 96px;
     height: 48px;
@@ -94,9 +76,4 @@ export const HeaderStyled = styled.header`
     cursor: pointer;
   }
 
-  .searchbar-icon {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-  }
 `

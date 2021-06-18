@@ -1,17 +1,22 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import DialogItem from '../DialogItem'
+import SeacrchBar from '../../../components/SearchBar'
 
 const DialogList = () => {
   return (
-    <Wrapper className='dialog-list'>
+    <Wrapper>
+      <SeacrchBar />
+      <DialogItem />
+      <DialogItem />
+      <DialogItem />
       <DialogItem />
     </Wrapper>
   )
 }
 
-const Wrapper = styled.div`
-  
+export const Wrapper = styled.ul`
+    width: var(--dialog-list-width);
 `
 
 export default DialogList

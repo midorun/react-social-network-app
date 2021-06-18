@@ -3,6 +3,7 @@ import {createGlobalStyle} from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   html{
     --color-main: #edeef0;
+    --dialog-list-width: 515px;
   }
   
   * {

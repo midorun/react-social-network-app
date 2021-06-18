@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 const Column: FC<{ children: ReactNode }> = ({ children }) => {
   return (
@@ -11,6 +11,7 @@ const Column: FC<{ children: ReactNode }> = ({ children }) => {
 
 
 export const Wrapper = styled.div`
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
 `;

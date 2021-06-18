@@ -1,12 +1,19 @@
 import DialogList from "./DialogList"
-import * as ST from "./styled"
+import styled from 'styled-components/macro'
+import { Route } from 'react-router-dom'
 
 const Messenger = () => {
   return (
-    <ST.Styled>
-      <DialogList />
-    </ST.Styled>
+    <Styled>
+      <Route path="/Messenger">
+        <DialogList />
+      </Route>
+    </Styled>
   )
 }
+
+export const Styled = styled.div`
+  height: 100vh;
+`
 
 export default Messenger
