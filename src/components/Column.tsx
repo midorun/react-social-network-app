@@ -12,6 +12,7 @@ const Column: FC<{ children: ReactNode }> = ({ children }) => {
 
 export const Wrapper = styled.div`
   /* height: 100%; */
+  /* width: auto; */
   display: flex;
   flex-direction: column;
 `;

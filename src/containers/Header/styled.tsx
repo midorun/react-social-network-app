@@ -12,7 +12,7 @@ export const HeaderStyled = styled.header`
   }
 
   .header__logo {
-    width: 163px;
+    width: 170px;
     height: 100%;
     padding: 0 5px;
     display: flex;

@@ -22,11 +22,6 @@ export const Wrapper = styled.div<{ rounded?: boolean }>`
     /* width: 100%; */
     border-radius: ${({ rounded }) => rounded ? '50%' : 0}
   }
-
-  ${DialogItemWrapper} & {
-    padding: 11px 14px 7px 0;
-  }
-
 `
 
 export default Image

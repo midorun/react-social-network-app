@@ -3,7 +3,10 @@ import {createGlobalStyle} from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   html{
     --color-main: #edeef0;
-    --dialog-list-width: 515px;
+    --color-light-gray: #a7afb8;
+    --background-dialog-item-hover: #f5f6f8;;
+    --background--nav-link-hover: #aeb7c21f;
+    --dialog-list-width: 550px;
   }
   
   * {

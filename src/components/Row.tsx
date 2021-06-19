@@ -1,6 +1,5 @@
-import React, { FC, ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 import styled from 'styled-components/macro'
-import { Main } from '../containers/Main/styled'
 
 const Row: FC<{ children: ReactNode }> = ({ children }) => {
   return (

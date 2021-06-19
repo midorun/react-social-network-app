@@ -5,7 +5,7 @@ import LogoIcon from '../../components/Icons/LogoIcon';
 import MusicIcon from '../../components/Icons/MusicIcon';
 import SearchBar from '../../components/SearchBar';
 
-import ProfileImg from './profile-img.jpg'
+import ProfileImg from '../../Img/profile-img.jpg'
 import { HeaderStyled } from './styled';
 
 const Header = () => {

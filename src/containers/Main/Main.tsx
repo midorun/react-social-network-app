@@ -18,15 +18,9 @@ const Main = () => {
           </Column>
           <Column>
             <Switch>
-              <Route path="/MyProfile">
-                <MyProfile />
-              </Route>
-              {/* <Route path="">
-              <News />
-            </Route> */}
-              <Route path="/Messenger">
-                <Messenger />
-              </Route>
+              <Route path="/MyProfile" render={() => <MyProfile />} />
+              <Route path="/Messenger" render={() => <Messenger />} />
+              {/* <Route path="/News" render={()=> <News/>}/>
               {/* <Route path="">
               <Friends />
             </Route> */}

@@ -1,23 +1,34 @@
 import * as ST from './styled'
-import DialogImg from './dialog-img.jpg'
 import Row from '../../../components/Row'
 import Column from '../../../components/Column'
 import Image from '../../../components/Image'
-const DialogItem = () => {
+import { FC } from 'react'
+import { DialogItemType } from '../Messenger'
+
+export interface DialogItemProps {
+  dialogItem: DialogItemType
+  onDialogItemSelect: (selectedDialogItemId: number) => void
+}
+
+const DialogItem: FC<DialogItemProps> = ({ dialogItem: { id, src, name, text, }, onDialogItemSelect }) => {
+
   return (
-    <ST.Wrapper>
+    <ST.Wrapper onClick={() => onDialogItemSelect(id)}>
       <Row>
         <Column>
-          <Image
-            src={DialogImg}
-            alt="dialog-img"
-            rounded
-          />
+          <ST.ImageWrapper>
+            <Image
+              src={src}
+              alt="dialog-img"
+              rounded
+            />
+          </ST.ImageWrapper>
         </Column>
         <Column>
-          <ST.Name>Dmitriy Vorozheykin</ST.Name>
-          {/* <ST.Date>Jun 9</ST.Date> */}
-          <ST.Text>Wall Post</ST.Text>
+          <ST.Content>
+            <ST.Name>{name}</ST.Name>
+            <ST.Text>{text}</ST.Text>
+          </ST.Content>
         </Column>
 
       </Row>

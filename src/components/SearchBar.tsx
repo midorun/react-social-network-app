@@ -15,13 +15,14 @@ export const Wrapper = styled.div`
   width: 230px;
   height: 32px;
   margin-right: 30px;
-  padding: 0 10px;
+  padding-left: 15px;
   display: flex;
   align-items: center;
   border-radius: 8px;
   background: #edeef0;
 
   ${DialogListWrapper} & {
+    padding-right: 70px;
     width: var(--dialog-list-width);
     height: 50px;
     border-radius: 4px;
@@ -31,9 +32,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Input = styled.input`
+    width:100%;
     border: none;
     outline: none;
     background: none;
-    font-size: 15px;
+    font-size: 13px;
 `;
 export default SearchBar

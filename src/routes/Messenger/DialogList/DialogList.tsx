@@ -1,16 +1,29 @@
-import React from 'react'
 import styled from 'styled-components/macro'
 import DialogItem from '../DialogItem'
 import SeacrchBar from '../../../components/SearchBar'
+import { FC } from 'react'
+import { DialogItemType } from '../Messenger'
 
-const DialogList = () => {
+interface Props {
+  dialogList: DialogItemType[]
+  onDialogItemSelect: (selectedDialogItemId: number) => void
+}
+
+const DialogList: FC<Props> = ({ dialogList, onDialogItemSelect }) => {
+
+  // По клику на айтем, запрос на сервер с айди айтема и загружать данные этого самого айтема
+
   return (
     <Wrapper>
       <SeacrchBar />
-      <DialogItem />
-      <DialogItem />
-      <DialogItem />
-      <DialogItem />
+      {dialogList.map((dialogItem) =>
+      (
+        <DialogItem
+          key={dialogItem.id}
+          dialogItem={dialogItem}
+          onDialogItemSelect={onDialogItemSelect}
+        />
+      ))}
     </Wrapper>
   )
 }
