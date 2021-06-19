@@ -1,24 +1,8 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const HeaderStyled = styled.header`
-
+export const Header = styled.header`
   max-width: 100%;
-
-  .header__inner {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-  }
-
-  .header__logo {
-    width: 170px;
-    height: 100%;
-    padding: 0 5px;
-    display: flex;
-    align-items: center;
-    /* cursor: pointer; */
-  }
 
   .header__icons {
     width: 96px;
@@ -75,5 +59,20 @@ export const HeaderStyled = styled.header`
     height: 35px;
     cursor: pointer;
   }
-
 `
+
+export const Inner = styled.div`
+     width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+`;
+
+export const LogoWrapper = styled(Link)`
+    width: 170px;
+    height: 100%;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    /* cursor: pointer; */
+`;

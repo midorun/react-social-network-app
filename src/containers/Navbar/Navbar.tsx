@@ -1,38 +1,38 @@
-import CommunitiesIcon from "../../components/Icons/CommunitiesIcon"
-import FriendsIcon from "../../components/Icons/FriendsIcon"
-import MessengerIcon from "../../components/Icons/MessengerIcon"
-import MusicIcon from "../../components/Icons/MusicIcon"
-import NewsIcon from "../../components/Icons/NewsIcon"
-import ProfileIcon from "../../components/Icons/ProfileIcon"
+import { ReactComponent as CommunitiesIcon } from "../../assets/Icons/CommunitiesIcon.svg"
+import { ReactComponent as FriendsIcon } from "../../assets/Icons/FriendsIcon.svg"
+import { ReactComponent as MessengerIcon } from "../../assets/Icons/MessengerIcon.svg"
+import { ReactComponent as MusicIcon } from "../../assets/Icons/MusicIcon.svg"
+import { ReactComponent as NewsIcon } from "../../assets/Icons/NewsIcon.svg"
+import { ReactComponent as ProfileIcon } from "../../assets/Icons/ProfileIcon.svg"
 import * as ST from "./styled"
 
 const Navbar = () => {
   return (
-    <ST.Nav className="nav">
+    <ST.Nav>
       <ST.NavList>
-        <ST.Li to="/MyProfile" className="nav__link link" href="/">
-          <div className="link__icon"><ProfileIcon /></div>
-          <span className="link__text">My profile</span>
+        <ST.Li to="/MyProfile" >
+          <ProfileIcon />
+          <ST.Text>My profile</ST.Text>
         </ST.Li>
-        <ST.Li to="/News" className="nav__link link" href="/">
-          <div className="link__icon"><NewsIcon /></div>
-          <span className="link__text">News</span>
+        <ST.Li to="/News" >
+          <NewsIcon />
+          <ST.Text>News</ST.Text>
         </ST.Li>
-        <ST.Li to="/Messenger/" className="nav__link link" href="/">
-          <div className="link__icon"><MessengerIcon /></div>
-          <span className="link__text">Messenger</span>
+        <ST.Li to="/Messenger/" >
+          <MessengerIcon />
+          <ST.Text>Messenger</ST.Text>
         </ST.Li>
-        <ST.Li to="/Friends" className="nav__link link" href="/">
-          <div className="link__icon"><FriendsIcon /></div>
-          <span className="link__text">Friends</span>
+        <ST.Li to="/Friends" >
+          <FriendsIcon />
+          <ST.Text>Friends</ST.Text>
         </ST.Li>
-        <ST.Li to="/Communities" className="nav__link link" href="/">
-          <div className="link__icon"><CommunitiesIcon /></div>
-          <span className="link__text">Communities</span>
+        <ST.Li to="/Communities" >
+          <CommunitiesIcon />
+          <ST.Text>Communities</ST.Text>
         </ST.Li>
-        <ST.Li to="/Music" className="nav__link link" href="/">
-          <div className="link__icon"><MusicIcon className="nav-icon" /></div>
-          <span className="link__text">Music</span>
+        <ST.Li to="/Music">
+          <MusicIcon />
+          <ST.Text>Music</ST.Text>
         </ST.Li>
       </ST.NavList>
     </ST.Nav>

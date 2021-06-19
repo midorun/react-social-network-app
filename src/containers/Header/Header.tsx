@@ -1,25 +1,24 @@
 import Container from '../../components/Container';
-import ArrowDownIcon from '../../components/Icons/ArrowDownIcon';
-import BellIcon from '../../components/Icons/BellIcon';
-import LogoIcon from '../../components/Icons/LogoIcon';
-import MusicIcon from '../../components/Icons/MusicIcon';
+import { ReactComponent as ArrowDownIcon } from '../../assets/Icons/ArrowDownIcon.svg';
+import { ReactComponent as BellIcon } from '../../assets/Icons/BellIcon.svg';
+import { ReactComponent as LogoIcon } from '../../assets/Icons/LogoIcon.svg';
+import { ReactComponent as MusicIcon } from '../../assets/Icons/MusicIcon.svg';
+import ProfileImg from '../../assets/Img/profile-img.jpg'
+import * as ST from './styled';
 import SearchBar from '../../components/SearchBar';
-
-import ProfileImg from '../../Img/profile-img.jpg'
-import { HeaderStyled } from './styled';
 
 const Header = () => {
   return (
-    <HeaderStyled className="header">
+    <ST.Header>
       <Container>
-        <div className="header__inner">
-          <div className="header__logo">
+        <ST.Inner>
+          <ST.LogoWrapper to="/">
             <LogoIcon />
-          </div>
+          </ST.LogoWrapper>
           <SearchBar />
           <div className="header__icons">
             <BellIcon />
-            <MusicIcon className="header-icon" />
+            <MusicIcon />
           </div>
           <div className="header__profile profile">
             <div className="profile__nickname">Dmitriy</div>
@@ -30,9 +29,9 @@ const Header = () => {
               <ArrowDownIcon />
             </div>
           </div>
-        </div>
+        </ST.Inner>
       </Container>
-    </HeaderStyled>
+    </ST.Header>
 
   )
 }

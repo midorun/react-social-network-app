@@ -2,12 +2,11 @@ import DialogList from "./DialogList"
 import styled from 'styled-components/macro'
 import { Route, useHistory } from 'react-router-dom'
 
-import dialogImgVorozheykin from '../../Img/dialog-img-vorozheykin.jpg'
-import dialogImgPetrov from '../../Img/dialog-img-petrov.jpg'
-import dialogImgChirkova from '../../Img/dialog-img-chirkova.jpg'
+import dialogImgVorozheykin from '../../assets/Img/dialog-img-vorozheykin.jpg'
+import dialogImgPetrov from '../../assets/Img/dialog-img-petrov.jpg'
+import dialogImgChirkova from '../../assets/Img/dialog-img-chirkova.jpg'
 import { useState } from "react"
 import DialogItemOpen from "./DialogItemOpen"
-
 export type DialogItemType = {
   id: number
   src: string
@@ -68,6 +67,8 @@ const Messenger = () => {
     setSelectedDialogItemId(id.toString())
     history.push(id.toString())
   }
+
+
 
   return (
     <Styled>

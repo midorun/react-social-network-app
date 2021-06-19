@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     --color-light-gray: #a7afb8;
     --background-dialog-item-hover: #f5f6f8;;
     --background--nav-link-hover: #aeb7c21f;
+    --color-icon: #5181b8;
     --dialog-list-width: 550px;
   }
   

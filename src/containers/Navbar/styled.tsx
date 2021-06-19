@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
 export const Nav = styled.nav`
 
   .nav__link {
@@ -8,12 +7,14 @@ export const Nav = styled.nav`
   }
 
   .nav-icon {
-    width: 17px;
-    height: 17px;
-    margin-right: 13px;
-    margin-left: 7px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    color: var(--color-icon);
   }
+
 `
+
 
 export const NavList = styled.ul`
   margin-right: 10px;
@@ -24,10 +25,14 @@ export const Li = styled(Link)`
   height: 30px;
   display: flex;
   align-items: center;
-  padding: 0 5px;
+  padding: 0 6px;
 
 
   &:hover{
     background-color: var(--background--nav-link-hover);
   }
 `
+
+export const Text = styled.span`
+  font-size: 14px;
+`;

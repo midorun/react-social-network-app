@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro';
-import LoupeIcon from '../components/Icons/LoupeIcon';
+import { ReactComponent as LoupeIcon } from '../assets/Icons/LoupeIcon.svg';
 import { Wrapper as DialogListWrapper } from '../routes/Messenger/DialogList/DialogList'
 const SearchBar = () => {
   return (
@@ -20,6 +20,7 @@ export const Wrapper = styled.div`
   align-items: center;
   border-radius: 8px;
   background: #edeef0;
+
 
   ${DialogListWrapper} & {
     padding-right: 70px;
