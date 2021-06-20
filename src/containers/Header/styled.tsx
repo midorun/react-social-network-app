@@ -1,19 +1,8 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const Header = styled.header`
   max-width: 100%;
-
-  .header__icons {
-    width: 96px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-  }
-
-  .header__icons> :not(:last-child) {
-    margin-right: 30px;
-  }
 
   .header__profile {
     width: 120px;
@@ -75,4 +64,33 @@ export const LogoWrapper = styled(Link)`
     display: flex;
     align-items: center;
     /* cursor: pointer; */
+`;
+
+export const IconWrapper = styled.div`
+  width:48px;
+  height:48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover{
+      background-color: var(--background-header-hover);
+    }
+
+  .header__icon{
+    width: 24px;
+    height: 24px;
+    color: var(--color-header-icon);
+  }
+`;
+
+export const IconsWrapper = styled.div`
+  width: 96px;
+  height: 48px;
+  display: flex;
+
+  &> :not(:last-child) {
+    /* margin-right: 30px; */
+  }
 `;

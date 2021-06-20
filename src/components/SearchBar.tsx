@@ -5,7 +5,7 @@ import { Wrapper as DialogListWrapper } from '../routes/Messenger/DialogList/Dia
 const SearchBar = () => {
   return (
     <Wrapper>
-      <LoupeIcon />
+      <LoupeIcon className="icon" />
       <Input type="text" placeholder="Search" />
     </Wrapper>
   )
@@ -21,7 +21,6 @@ export const Wrapper = styled.div`
   border-radius: 8px;
   background: #edeef0;
 
-
   ${DialogListWrapper} & {
     padding-right: 70px;
     width: var(--dialog-list-width);
@@ -29,6 +28,10 @@ export const Wrapper = styled.div`
     border-radius: 4px;
     border-bottom: 2px solid var(--color-main);
     background-color: #fff;
+  }
+
+  .icon{
+    margin-right: 10px;
   }
 `;
 

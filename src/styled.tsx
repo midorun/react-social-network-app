@@ -1,12 +1,14 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html{
     --color-main: #edeef0;
     --color-light-gray: #a7afb8;
     --background-dialog-item-hover: #f5f6f8;;
-    --background--nav-link-hover: #aeb7c21f;
-    --color-icon: #5181b8;
+    --background-nav-hover: #e5e7eb;
+    --background-header-hover: #f5f6f8;
+    --color-nav-icon: #5181b8;
+    --color-header-icon: #6f7985;
     --dialog-list-width: 550px;
   }
   

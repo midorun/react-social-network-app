@@ -16,10 +16,14 @@ const Header = () => {
             <LogoIcon />
           </ST.LogoWrapper>
           <SearchBar />
-          <div className="header__icons">
-            <BellIcon />
-            <MusicIcon />
-          </div>
+          <ST.IconsWrapper>
+            <ST.IconWrapper>
+              <BellIcon className="header__icon" />
+            </ST.IconWrapper>
+            <ST.IconWrapper>
+              <MusicIcon className="header__icon" />
+            </ST.IconWrapper>
+          </ST.IconsWrapper>
           <div className="header__profile profile">
             <div className="profile__nickname">Dmitriy</div>
             <div className="profile__img-wrapper">

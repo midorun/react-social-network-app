@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 export const Nav = styled.nav`
 
   .nav__link {
@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    color: var(--color-icon);
+    color: var(--color-nav-icon);
   }
 
 `
@@ -29,7 +29,7 @@ export const Li = styled(Link)`
 
 
   &:hover{
-    background-color: var(--background--nav-link-hover);
+    background-color: var(--background-nav-hover);
   }
 `
 
