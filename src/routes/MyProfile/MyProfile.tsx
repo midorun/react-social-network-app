@@ -1,25 +1,37 @@
-import * as ST from './styled'
+import styled from 'styled-components/macro'
 
-import InfoImg from './info__img.jpg'
+import Photo from '../../assets/Img/photo-1.jpg'
+import Column from '../../components/Column'
+import Row from '../../components/Row'
+import Description from './Description'
+import Photos from './Photos'
+import Image from '../../components/Image'
+import Posts from './Posts'
+
 const MyProfile = () => {
   return (
-    <ST.Wrapper className="myprofile">
-      <div className="myprofile__info info">
-        <div className="info__img">
-          <img src={InfoImg} alt="" className="myprofile__img" />
-        </div>
-        <div className="info__text">
-          <div className="info__name">Dmitriy Vorozheykin</div>
-          <div className="info__online"></div>
-          <div className="info__status"></div>
-          <div className="info__additional"></div>
-          <div className="info__summary"></div>
-        </div>
-      </div>
-      <div className="myprofile__photos"></div>
-      <div className="myprofile__posts"></div>
-    </ST.Wrapper>
+    <Wrapper>
+      <Row>
+        <Column>
+          <Image src={Photo} alt="profile image" />
+        </Column>
+        <Column>
+          <Description />
+        </Column>
+      </Row>
+
+      <Row>
+        <Photos />
+      </Row>
+      <Row>
+        <Posts />
+      </Row>
+    </Wrapper>
   )
 }
+
+export const Wrapper = styled.div`
+  width: 795px;
+`;
 
 export default MyProfile

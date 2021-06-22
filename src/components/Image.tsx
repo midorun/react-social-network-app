@@ -1,8 +1,7 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components/macro'
 import { Wrapper as DialogItemOpenWrapper } from '../routes/Messenger/DialogItemOpen/styled'
-import { Wrapper as DialogItemWrapper } from '../routes/Messenger/DialogItem/styled'
-
+import { Wrapper as MyProfileWrapper } from '../routes/MyProfile/MyProfile'
 interface Props {
   src: string,
   alt: string,
@@ -28,6 +27,20 @@ export const Wrapper = styled.div<{ rounded?: boolean }>`
     width: 30px;
     height: 30px;
   }
+
+  ${MyProfileWrapper} & {
+    margin-right: 15px;
+    padding: 15px;
+    width: 230px;
+    height: 230px;
+    border-radius: 4px;
+    background-color: #fff;
+
+    img{
+      border-radius: 4px;
+    }
+  }
+
 `
 
 export default Image
