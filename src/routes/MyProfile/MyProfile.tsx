@@ -3,7 +3,7 @@ import * as ST from './styled'
 import InfoImg from './info__img.jpg'
 const MyProfile = () => {
   return (
-    <ST.Styled className="myprofile">
+    <ST.Wrapper className="myprofile">
       <div className="myprofile__info info">
         <div className="info__img">
           <img src={InfoImg} alt="" className="myprofile__img" />
@@ -18,7 +18,7 @@ const MyProfile = () => {
       </div>
       <div className="myprofile__photos"></div>
       <div className="myprofile__posts"></div>
-    </ST.Styled>
+    </ST.Wrapper>
   )
 }
 

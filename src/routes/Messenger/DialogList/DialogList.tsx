@@ -2,7 +2,7 @@ import styled from 'styled-components/macro'
 import DialogItem from '../DialogItem'
 import SeacrchBar from '../../../components/SearchBar'
 import { FC } from 'react'
-import { DialogItemType } from '../Messenger'
+import { DialogItemType } from '../../../types/types'
 
 interface Props {
   dialogList: DialogItemType[]
@@ -29,7 +29,7 @@ const DialogList: FC<Props> = ({ dialogList, onDialogItemSelect }) => {
 }
 
 export const Wrapper = styled.ul`
-    width: var(--dialog-list-width);
+    width: var(--messenger-content-width);
 `
 
 export default DialogList

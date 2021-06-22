@@ -3,7 +3,7 @@ import Row from '../../../components/Row'
 import Column from '../../../components/Column'
 import Image from '../../../components/Image'
 import { FC } from 'react'
-import { DialogItemType } from '../Messenger'
+import { DialogItemType } from '../../../types/types'
 
 export interface DialogItemProps {
   dialogItem: DialogItemType

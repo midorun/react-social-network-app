@@ -9,7 +9,7 @@ export const Wrapper = styled.li`
   cursor: pointer;
 
   &:hover{
-    background-color: var(--background-dialog-item-hover)
+    background-color: var(--color-white-light)
   }
 `
 
@@ -30,7 +30,7 @@ export const Name = styled.div`
       right: 40px;
       font-size: 12px;
       font-weight: 400;
-      color: var(--color-light-gray)
+      color: var(--color-gray-light)
     }
 `;
 
@@ -46,5 +46,5 @@ export const Content = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid var(--color-main);
+  border-bottom: 1px solid var(--color-white-dark);
 `;

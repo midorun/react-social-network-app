@@ -11,6 +11,7 @@ const Row: FC<{ children: ReactNode }> = ({ children }) => {
 
 export const Wrapper = styled.div`
   width: 100%;
+  height: inherit;
   display: flex;
   flex-direction: row;
 

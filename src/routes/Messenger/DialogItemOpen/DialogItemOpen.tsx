@@ -1,23 +1,52 @@
-import React from 'react'
 import { FC } from 'react';
-import styled from 'styled-components/macro';
-
+import * as ST from './styled'
+import Column from '../../../components/Column';
+import Row from '../../../components/Row';
+import { DialogItemType } from '../../../types/types';
+import { ReactComponent as ArrowLeftIcon } from '../../../assets/Icons/ArrowLeft.svg'
+import Image from '../../../components/Image'
+import ChirkovaImage from '../../../assets/Img/dialog-img-chirkova.jpg'
 interface DialogItemOpenProps {
-  itemId: string | null
+  dialogItem: DialogItemType
 }
 
-const DialogItemOpen: FC<DialogItemOpenProps> = ({ itemId }) => {
+const DialogItemOpen: FC<DialogItemOpenProps> = ({ dialogItem: { name } }) => {
+
+
   return (
-    <Wrapper>
-      {itemId}
-    </Wrapper>
+    <ST.Wrapper>
+      <ST.Header>
+        <Row>
+          <Column>
+            <ST.Back to="/Messenger/">
+              <ArrowLeftIcon />
+              <ST.BackText>Back</ST.BackText>
+            </ST.Back>
+          </Column>
+
+          <Column>
+            <ST.TitleWrapper>
+              <ST.Name>{name}</ST.Name>
+            </ST.TitleWrapper>
+          </Column>
+
+          <Column>
+            <ST.ImageWrapper>
+              <Image src={ChirkovaImage} alt="image" rounded />
+            </ST.ImageWrapper>
+          </Column>
+        </Row>
+      </ST.Header>
+      <ST.Messages>
+        <div className="MessagesInner">
+
+        </div>
+      </ST.Messages>
+      <ST.InputSection>
+
+      </ST.InputSection>
+    </ST.Wrapper>
   )
 }
-
-export const Wrapper = styled.div`
-  width: 400px;
-  height: 40px;
-  background-color: var(--color-main);
-`;
 
 export default DialogItemOpen

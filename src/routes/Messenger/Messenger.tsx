@@ -1,18 +1,14 @@
-import DialogList from "./DialogList"
-import styled from 'styled-components/macro'
 import { Route, useHistory } from 'react-router-dom'
+import { useState } from "react"
+import styled from 'styled-components/macro'
+
+import DialogList from "./DialogList"
+import DialogItemOpen from "./DialogItemOpen"
 
 import dialogImgVorozheykin from '../../assets/Img/dialog-img-vorozheykin.jpg'
 import dialogImgPetrov from '../../assets/Img/dialog-img-petrov.jpg'
 import dialogImgChirkova from '../../assets/Img/dialog-img-chirkova.jpg'
-import { useState } from "react"
-import DialogItemOpen from "./DialogItemOpen"
-export type DialogItemType = {
-  id: number
-  src: string
-  name: string
-  text: string
-}
+import { DialogItemType } from '../../types/types'
 
 const state = {
   dialogList: [
@@ -20,55 +16,59 @@ const state = {
       id: 1,
       src: dialogImgVorozheykin,
       name: 'Dmitriy Vorozheykin',
-      text: 'Wall Post'
+      text: 'Wall Post',
+      messages: []
     },
     {
       id: 2,
       src: dialogImgChirkova,
       name: 'Liza Chirkova',
-      text: 'Все'
+      text: 'Все',
+      messages: [
+        {
+          senderId: 2,
+          recipientId: 1,
+          text: 'Пхаха'
+        },
+        {
+          senderId: 2,
+          recipientId: 1,
+          text: 'Не буду'
+        },
+        {
+          senderId: 2,
+          recipientId: 1,
+          text: 'Не сцы'
+        },
+        {
+          senderId: 1,
+          recipientId: 2,
+          text: 'Ну смотри'
+        },
+      ]
     },
     {
       id: 3,
       src: dialogImgPetrov,
       name: 'Alexey Petrov',
-      text: 'Пхахпхаххпхпхп'
+      text: 'Пхахпхаххпхпхп',
+      messages: []
     }
   ],
-  messages: [
-    {
-      sender: 2,
-      recipient: 1,
-      text: 'Пхаха'
-    },
-    {
-      sender: 2,
-      recipient: 1,
-      text: 'Не буду'
-    },
-    {
-      sender: 2,
-      recipient: 1,
-      text: 'Не сцы'
-    },
-    {
-      sender: 1,
-      recipient: 2,
-      text: 'Ну смотри'
-    },
-  ]
 }
 
 const Messenger = () => {
-  const [selectedDialogItemId, setSelectedDialogItemId] = useState<string | null>(null)
+  const [selectedDialogItemId, setSelectedDialogItemId] = useState<number>()
   const history = useHistory();
 
   const onDialogItemSelected = (id: number) => {
-    setSelectedDialogItemId(id.toString())
-    history.push(id.toString())
+    setSelectedDialogItemId(id)
+    history.push(`${id}`)
   }
 
-
+  const getDialogItem = (dialogItemId: number | undefined) => {
+    return state.dialogList.find(({ id }) => id === dialogItemId) || ([] as unknown) as DialogItemType
+  }
 
   return (
     <Styled>
@@ -80,7 +80,7 @@ const Messenger = () => {
       </Route>
       <Route
         path="/Messenger/:id"
-        render={() => <DialogItemOpen itemId={selectedDialogItemId} />}
+        render={() => <DialogItemOpen dialogItem={getDialogItem(selectedDialogItemId)} />}
       />
     </Styled>
   )

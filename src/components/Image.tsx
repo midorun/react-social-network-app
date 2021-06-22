@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components/macro'
+import { Wrapper as DialogItemOpenWrapper } from '../routes/Messenger/DialogItemOpen/styled'
 import { Wrapper as DialogItemWrapper } from '../routes/Messenger/DialogItem/styled'
 
 interface Props {
@@ -19,8 +20,13 @@ const Image: FC<Props> = ({ src, alt, className, rounded }) => {
 
 export const Wrapper = styled.div<{ rounded?: boolean }>`
   img{
-    /* width: 100%; */
+    width: 100%;
     border-radius: ${({ rounded }) => rounded ? '50%' : 0}
+  }
+
+  ${DialogItemOpenWrapper} & {
+    width: 30px;
+    height: 30px;
   }
 `
 

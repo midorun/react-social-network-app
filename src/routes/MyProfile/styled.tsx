@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
-export const Styled = styled.div`
+export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
   /* background-color: gray; */

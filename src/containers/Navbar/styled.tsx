@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    color: var(--color-nav-icon);
+    color: var(--color-blue);
   }
 
 `
@@ -29,7 +29,7 @@ export const Li = styled(Link)`
 
 
   &:hover{
-    background-color: var(--background-nav-hover);
+    background-color: var(--color-white-dark);
   }
 `
 

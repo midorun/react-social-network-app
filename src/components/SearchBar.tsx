@@ -23,10 +23,10 @@ export const Wrapper = styled.div`
 
   ${DialogListWrapper} & {
     padding-right: 70px;
-    width: var(--dialog-list-width);
+    width: var(--messenger-content-width);
     height: 50px;
     border-radius: 4px;
-    border-bottom: 2px solid var(--color-main);
+    border-bottom: 2px solid var(--color-white-medium);
     background-color: #fff;
   }
 

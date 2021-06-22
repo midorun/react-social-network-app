@@ -2,14 +2,18 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html{
-    --color-main: #edeef0;
-    --color-light-gray: #a7afb8;
-    --background-dialog-item-hover: #f5f6f8;;
-    --background-nav-hover: #e5e7eb;
-    --background-header-hover: #f5f6f8;
-    --color-nav-icon: #5181b8;
-    --color-header-icon: #6f7985;
-    --dialog-list-width: 550px;
+    --color-white: #ffffff;
+    --color-white-light: #F5F6F8;
+    --color-white-medium: #EDEEF0;
+    --color-white-dark: #E5E7EB;
+
+    --color-gray-light: #A7AFB8;
+    --color-gray-medium: #818C99;
+    --color-gray-dark: #6F7985;
+
+    --color-blue: #5181b8;
+
+    --messenger-content-width: 550px;
   }
   
   * {

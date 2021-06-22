@@ -75,13 +75,13 @@ export const IconWrapper = styled.div`
   cursor: pointer;
 
   &:hover{
-      background-color: var(--background-header-hover);
+      background-color: var(--background-blue-light);
     }
 
   .header__icon{
     width: 24px;
     height: 24px;
-    color: var(--color-header-icon);
+    color: var(--color-gray-dark);
   }
 `;
 
