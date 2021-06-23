@@ -1,7 +1,8 @@
 import { FC } from 'react'
 import styled from 'styled-components/macro'
 import { Wrapper as DialogItemOpenWrapper } from '../routes/Messenger/DialogItemOpen/styled'
-import { Wrapper as MyProfileWrapper } from '../routes/MyProfile/MyProfile'
+import { ImageWrapper as MyProfileWrapper } from '../routes/MyProfile/MyProfile'
+import { Wrapper as PostsAddWrapper } from '../routes/MyProfile/PostsAdd/PostsAdd'
 interface Props {
   src: string,
   alt: string,
@@ -39,6 +40,12 @@ export const Wrapper = styled.div<{ rounded?: boolean }>`
     img{
       border-radius: 4px;
     }
+  }
+
+  ${PostsAddWrapper} & {
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
   }
 
 `

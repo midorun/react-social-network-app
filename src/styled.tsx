@@ -41,13 +41,20 @@ const GlobalStyle = createGlobalStyle`
     list-style-type: none;
   }
 
-  a,
-  a:hover,
-  a:visited {
+  a, a:hover, a:visited {
     text-decoration: none;
     outline: none;
     border: none;
     color: inherit;
+  }
+
+  input, input:focus, input:active{
+    border: none;
+    outline: none;
+  }
+
+  button{
+    outline: none;
   }
 `
 
