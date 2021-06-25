@@ -11,3 +11,12 @@ export type MessageType = {
   recipientId: number,
   text: string
 }
+
+export type PostType = {
+  id: number,
+  src: string,
+  name: string,
+  date: string,
+  content: string,
+  likeCount: number
+}

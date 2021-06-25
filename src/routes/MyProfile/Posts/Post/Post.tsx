@@ -47,7 +47,9 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Header = styled.div``;
+export const Header = styled.div`
+  color: var(--color-gray-dark);
+`;
 
 export const PostImage = styled.div`
   margin-right: 15px;
